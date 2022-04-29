@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+.caruosel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no repeat center center scroll;
+}
+.caruosel-caption{
+    bottom: 220px;
+}
+.caruosel-caption h5{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    background: #262626;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+}
+.navbar-nav a{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-left: 15px;
+}
+.single-content{
+    position: relative;
+    transition: .3s;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+}
+.single-content .text-content,
+.single-content::after{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}
+.single-content::after{
+    content: "";
+    display: block;
+    background: #212529;
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transform: rotate3d(-1,1,0,100deg);
+    transition: .4s;
+}
+.single-content:hover::after{
+    opacity: .9;
+    transform: rotate3d(0,0,0,0deg);
+}
+.single-content img{
+    width: 100%;
+    height: auto;
+}
+.text-content{
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%, -30%);
+    text-align: center;
+    color: #f4f4f4;
+}
+.text-content h4{
+    font-family: big john;
+}
+.single-content:hover .text-content{
+    opacity: 1;
+    transform: translate(0,50%);
+    transition-delay:.3s ;
+}
+#contact{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+#endOfPage{
+    background-image: url(/concert/images+logos/slider-3.jpg);
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.socials{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.socials a i:hover{
+    size: 20px;
+}

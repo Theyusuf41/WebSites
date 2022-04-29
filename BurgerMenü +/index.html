@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">    
+    <!--Custom Css -->
+    <link rel="stylesheet" href="main.css">
+    
+
+
+</head>
+
+<body>
+    <!--Navbar Starts-->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars icons" onclick="myFunction()"></div>
+        <div id="search-btn" class="fas fa-search icons"></div>
+
+        <nav class="navbar" id="myNavBar">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <span class="space"></span>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <a href="#" class="fas fa-shopping-cart icons"></a>
+
+        <a href="#home" class="logo"> <img src="images/hamburger.png" alt=""> </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!--Navbar Ends-->
+    <!--Home Section Starts-->
+    <section class="home" id="home">
+        <div class="content">
+            <img data-aos="fade-up" data-aos-delay="150" src="images/burger-baner.png" alt="">
+            <h3 data-aos="fade-up" data-aos-delay="300">So delicious</h3>
+            <p data-aos="fade-up" data-aos-delay="450">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi pariatur similique excepturi beatae
+                perferendis qui voluptatum. Tenetur consequuntur iste eligendi.</p>
+            <a data-aos="fade-up"  href="#menu" class="btn">our menu</a>
+        </div>
+    </section>
+    <!--Home Section Ends-->
+    <!--Service Section Starts-->
+    <section class="service">
+        <div class="box">
+            <i class="fas fa-hamburger"></i>
+            <h3>Quality</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Quick and Free Delivery</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>Reachable</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus.</p>
+        </div>
+    </section>
+    <!--Service Section Ends-->
+
+    <!--Menu Section Starts-->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <img src="images/title-img.png" alt="">
+            <h3>Our Deals</h3>
+        </div>
+        <div class="menu-container1">
+            <div class="box-container">
+                <img src="images/product-1.png" alt="">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Cheese Hamburger</h3>
+                    <div class="price">10.99Euro</div>
+                    <a href="#" class="btn">Add to Card</a>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <img src="images/product-2.png" alt="">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Cheese Hamburger</h3>
+                    <div class="price">10.99Euro</div>
+                    <a href="#" class="btn">Add to Card</a>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <img src="images/product-3.png" alt="">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Cheese Hamburger</h3>
+                    <div class="price">10.99Euro</div>
+                    <a href="#" class="btn">Add to Card</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container2">
+            <div class="box-container">
+                <img src="images/product-4.png" alt="">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Cheese Hamburger</h3>
+                    <div class="price">10.99Euro</div>
+                    <a href="#" class="btn">Add to Card</a>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <img src="images/product-5.png" alt="">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Cheese Hamburger</h3>
+                    <div class="price">10.99Euro</div>
+                    <a href="#" class="btn">Add to Card</a>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <img src="images/product-6.png" alt="">
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Cheese Hamburger</h3>
+                    <div class="price">10.99Euro</div>
+                    <a href="#" class="btn">Add to Card</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Menu Section Ends-->
+
+    <!--About Section Starts-->
+    <section class="about">
+        <div class="image">
+            <img src="images/about-img.png" alt="">
+        </div>
+        <div class="content">
+            <h3 class="title">Entry to the Meat Heaven</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum, asperiores voluptate
+                voluptatibus dolores tempora exercitationem assumenda eius? Illum necessitatibus quia vel. Voluptatem
+                cupiditate quod ducimus quam, officiis quisquam porro.</p>
+        </div>
+        <div class="icon">
+            <h3> <i class="fas fa-check"></i> super price </h3>
+            <h3> <i class="fas fa-check"></i> amazing service </h3>
+            <h3> <i class="fas fa-check"></i> nutritious burgers </h3>
+
+        </div>
+        <a href="#" class="btn">Read More</a>
+
+    </section>
+    <!--About Section Ends-->
+    <!--Review Section Starts -->
+    <section class="review" id="reviews">
+        <div class="heading">
+            <img src="images/title-img.png" alt="">
+            <h3>testimonials</h3>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/pic-1.png" alt="">
+                <h3>Jennifer Doe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sapiente possimus maiores ipsam
+                    doloribus, omnis corrupti est repellendus explicabo similique.</p>\
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/pic-2.png" alt="">
+                <h3>John Doe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sapiente possimus maiores ipsam
+                    doloribus, omnis corrupti est repellendus explicabo similique.</p>\
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/pic-3.png" alt="">
+                <h3>Beth Doe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sapiente possimus maiores ipsam
+                    doloribus, omnis corrupti est repellendus explicabo similique.</p>\
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Reviev Section Ends -->
+
+
+    <!--Contact Section Starts-->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <img src="images/title-img.png" alt="">
+            <h3>contact us</h3>
+        </div>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93066.88722075615!2d9.771060970368554!3d53.311320554317014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b197fd2e83d097%3A0x576a2982ee5f94b1!2s21244%20Buchholz%20in%20der%20Nordheide!5e1!3m2!1str!2sde!4v1647703938991!5m2!1str!2sde"
+                allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="form">
+                <div class="icons-container">
+                    <div class="iconns">
+                        <i class="fas fa-map"></i>
+                        <h3>address:</h3>
+                        <p>Buchholz, 21244</p>
+                    </div>
+
+                    <div class="iconns">
+                        <i class="fas fa-envelope"></i>
+                        <h3>email:</h3>
+                        <p>mail@mailto.com</p>
+                    </div>
+
+                    <div class="iconns">
+                        <i class="fas fa-phone"></i>
+                        <h3>phone:</h3>
+                        <p>+123456789</p>
+                    </div>
+
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="full name" class="box">
+                    <input type="email" placeholder="email" class="box">
+                    <input type="number" placeholder="phone" class="box">
+                    <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="send" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section Ends-->
+
+    <!--Blog Section Starts-->
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <img src="images/title-img.png" alt="">
+            <h3>Blog</h3>
+        </div>
+        <div class="main-container">
+            <div class="box-container">
+                <div class="box">
+                    <div class="images">
+                        <img src="images/blog-1.jpg" alt="">
+                        <div class="iconss">
+                            <a href="#"> <i class="fas fa-calendar"></i> 20 Mart 2022</a>
+                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, similique.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="images">
+                        <img src="images/blog-2.jpg" alt="">
+                        <div class="iconss">
+                            <a href="#"> <i class="fas fa-calendar"></i> 15 Mart 2022</a>
+                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, similique.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="images">
+                        <img src="images/blog-3.jpg" alt="">
+                        <div class="iconss">
+                            <a href="#"> <i class="fas fa-calendar"></i>09 Mart 2022</a>
+                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, similique.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Blog Section Ends-->
+
+    <!--Footer Section Starts-->
+    <section class="footer">
+        <div class="links">
+            <a href="#home" class="btn">home</a>
+            <a href="#menu" class="btn">menu</a>
+            <a href="#about" class="btn">about</a>
+            <a href="#review" class="btn">review</a>
+            <a href="#contact" class="btn">contact</a>
+            <a href="#blogs" class="btn">blogs</a>
+        </div>
+
+        <p class="credit">created by <span>sari CIVCIV </span> | all rights reserved!</p>
+    </section>
+    <!--Foooter Section Ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Javascprit -->
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:800,
+        });
+    </script>
+</body>
+
+</html>

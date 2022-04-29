@@ -1,0 +1,125 @@
+*{
+    padding:0 ;
+    margin: 0;
+    font-family: 'Mochiy Pop P One', 'sans-serif';
+}
+:root{
+    --clr-neutral-900: hsl(207,13%,9%);
+    --clr-neutral-400: hsl(0,0%,100%);
+    --clr-accent-400: hsl(142,90%,61%);
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    padding-top: 40px;
+    background-color: #f4f4f4;
+}
+.navbar-brand{
+    margin-left: 90px;
+    font-weight: 100 !important;   
+}
+.navbar-brand:hover{
+    border: 1px solid #ffff;
+    background-color:#CCCCCC;
+    padding: 7px;
+    border-radius: 30%;
+}
+.navbar-nav{
+    margin-right: 10px;
+    padding:5px;
+    border-bottom: 1px solid #ffff;
+}
+.navbar-nav a{
+    margin-right: 10px;
+    color: black !important;    
+}
+.navbar-nav a:hover{
+    border: 1px solid #CCCCCC;
+    background-color:#CCCCCC;
+    padding: 7px;
+    border-radius: 20%;
+}
+#introPic{
+    padding-top: 160px;
+    background-image: url(/BR_Architects/images/intro2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+}
+#introName{
+    color: #ffff !important;
+}
+#projects h3{
+    font-weight: 50 !important;
+}
+.card{
+    position: relative;
+    transition: .3s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+.card .card-text,
+.card::after{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+}
+.card::after{
+    content: '';
+    display: block;
+    background: #C5BDB3;
+    top:5px;
+    bottom: 5px;
+    opacity: 0;
+    transition:rotated3d(-1,1,0,100deg);
+    transition: .4s;
+}
+.card:hover::after{
+    opacity: .9;
+    transform:rotate3d(0,0,0,0deg) ;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-text{
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%, -30%);
+    text-align: center;
+    color: #fff;
+}
+.card:hover .card-text{
+    opacity: 1;
+    transform: translate(0,50%);
+    transition-delay: .3s;
+}
+.single-content{
+    color: var(--clr-neutral-900);
+    max-width: 35ch;
+    padding: 3rem 0 0 ; 
+}
+.content-body{
+    padding: 1.5em;
+    background: hsl(0,0%,0% / 1)
+    ;
+}
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1.05em;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    border: none;
+}
+.button:hover,
+.button:focus{
+    background-color: var (--clr-accent-400);
+    color: var(--clr-neutral-400) ;
+    transition: transform 500ms ease;
+}
